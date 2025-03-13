@@ -1,0 +1,176 @@
+/* --
+INSTRUCTIONS
+Use only external CSS file (no internal or inline styling)
+Every element must be styled.
+Create style rules using class, id, and element selectors.
+--*/
+
+/* -- This body element is found in all 3 of my pages. With it I could change the background 
+and I picked a font family the look I wante to give my page. These fonts are used as backups incase of an issue with the first one. --*/
+body{
+    background-color: rgb(255, 218, 218);
+    font-family:'Arial',Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+/* -- ELEMENTS -- */
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 2px  rgb(35, 26, 7);
+    -webkit-text-stroke: 1px green;
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3{
+    color:  white;
+    -webkit-text-stroke: 1px rgba(21, 14, 1, 0.175);
+    text-shadow: 1px 1px 1px darkgreen;
+    background-color: rgb(230, 159, 18);
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 3px;
+  
+    margin:20px;
+}
+
+h4{
+    background-color: rgba(160, 222, 112, 0.708);
+    border-radius: 10px;
+    width: max-content;
+    padding: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-- NAV class SELECTOR -- */
+
+    /*-- Navbar was given a class selector so I can make changes to the navbar across pages--*/
+.navbar {
+    background-color: rgba(160, 222, 112, 0.708);
+    padding: .25em;
+}
+ /*-- This part was added to adjust the list placement. --*/
+.navbar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    list-style-type:none;
+}
+
+/*-- This was used to center the list. --*/
+.navbar li{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /*-- This section was added to modify the font. --*/
+.navbar a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 15px;
+    font-size: 24px;
+    box-shadow: 2px 1px rgb(255, 255, 255);
+    border-radius: 15%;
+}
+
+/*-- The navbar hover is to hover on the menu and to decorate it. --*/ 
+.navbar a:hover{
+    color:rgb(230, 159, 18);
+}
+
+/*-- navbar active was added to change text color when actively clicking. --*/
+.navbar a:active {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15%;
+}
+
+/* -- IMAGE LIST - INDEX PAGE - ID SELECTORS -- */
+
+/*-- ID selector was used for the image section because you use it for an element being used just once.
+Since the images are only referenced in the first page and not across pages the ID rule.  --*/
+
+/*-- Wraps used so content doesn't overlap. --*/
+#placesVisited {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    text-shadow: 1px 1px 1px  rgb(84, 164, 41);
+}
+ 
+/*-- Used this part to remove list bullet points. --*/
+#placesVisited li {
+    list-style-type: none;
+}
+
+/*-- Used this selector to style the images. --*/
+#placesVisited img {
+    width: 200px;
+    border-radius: 15px;
+    border: 10px solid white;
+}
+/* -- TABLE -- */
+
+table {
+    background-color: rgb(230, 159, 18);
+    border: 3px dotted rgba(160, 222, 112, 0.708);
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table caption {
+    font-size: 30px;
+    font-weight: 600;
+    border: 3px solid rgb(230, 159, 18);
+    background-color: rgba(160, 222, 112, 0.708);
+    color: white;
+    text-shadow: 1px 1px 1px rgb(35, 26, 7);
+}
+
+thead{
+    font-size: large;
+    background-color: rgba(255, 218, 218, 0.768);
+    text-shadow: 1px 1px 1px rgb(230, 159, 18);
+}
+
+th, tr, td {
+    text-indent: 20px;
+    padding: 5px;
+    text-shadow: 1px 1px 1px rgb(35, 26, 7);
+}
+
+/* --- FORM PAGE -- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: rgba(160, 222, 112, 0.708);
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    color:white;
+    text-shadow: 1px 1px 1px darkgreen;
+    letter-spacing: 2px;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: left;
+}
+
+form input{
+    margin-bottom: 2em;
+    font-size: small;
+}
+/*--This element selector was used to target and design the button on the form. --*/
+
+form button {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
